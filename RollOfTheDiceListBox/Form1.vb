@@ -19,6 +19,7 @@
     Private Sub UpdateButton_Click(sender As Object, e As EventArgs) Handles UpdateButton.Click
         Roll()
     End Sub
+
     Sub Roll()
         Dim currentRoll(12) As Integer
         Dim linePrint As Integer
