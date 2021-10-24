@@ -22,6 +22,7 @@ Partial Class RollOfTheDiceListBoxForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RollOfTheDiceListBoxForm))
         Me.DisplayListBox = New System.Windows.Forms.ListBox()
         Me.RollButton = New System.Windows.Forms.Button()
         Me.ExitButton = New System.Windows.Forms.Button()
@@ -65,7 +66,7 @@ Partial Class RollOfTheDiceListBoxForm
         Me.ClearButton.Text = "&Clear"
         Me.ClearButton.UseVisualStyleBackColor = True
         '
-        'Form1
+        'RollOfTheDiceListBoxForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -74,8 +75,9 @@ Partial Class RollOfTheDiceListBoxForm
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.RollButton)
         Me.Controls.Add(Me.DisplayListBox)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Name = "RollOfTheDiceListBoxForm"
+        Me.Text = "Roll of the Dice"
         Me.ResumeLayout(False)
 
     End Sub
