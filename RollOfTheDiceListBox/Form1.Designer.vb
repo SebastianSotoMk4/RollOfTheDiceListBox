@@ -22,54 +22,66 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.UpdateButton = New System.Windows.Forms.Button()
+        Me.DisplayListBox = New System.Windows.Forms.ListBox()
+        Me.RollButton = New System.Windows.Forms.Button()
         Me.ExitButton = New System.Windows.Forms.Button()
+        Me.ClearButton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'ListBox1
+        'DisplayListBox
         '
-        Me.ListBox1.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 14
-        Me.ListBox1.Location = New System.Drawing.Point(12, 120)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(520, 256)
-        Me.ListBox1.TabIndex = 0
+        Me.DisplayListBox.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DisplayListBox.FormattingEnabled = True
+        Me.DisplayListBox.ItemHeight = 14
+        Me.DisplayListBox.Location = New System.Drawing.Point(13, 26)
+        Me.DisplayListBox.Name = "DisplayListBox"
+        Me.DisplayListBox.Size = New System.Drawing.Size(520, 256)
+        Me.DisplayListBox.TabIndex = 0
         '
-        'UpdateButton
+        'RollButton
         '
-        Me.UpdateButton.Location = New System.Drawing.Point(175, 415)
-        Me.UpdateButton.Name = "UpdateButton"
-        Me.UpdateButton.Size = New System.Drawing.Size(75, 23)
-        Me.UpdateButton.TabIndex = 1
-        Me.UpdateButton.Text = "Update"
-        Me.UpdateButton.UseVisualStyleBackColor = True
+        Me.RollButton.Location = New System.Drawing.Point(12, 288)
+        Me.RollButton.Name = "RollButton"
+        Me.RollButton.Size = New System.Drawing.Size(117, 52)
+        Me.RollButton.TabIndex = 1
+        Me.RollButton.Text = "&Roll"
+        Me.RollButton.UseVisualStyleBackColor = True
         '
         'ExitButton
         '
-        Me.ExitButton.Location = New System.Drawing.Point(175, 386)
+        Me.ExitButton.Location = New System.Drawing.Point(415, 288)
         Me.ExitButton.Name = "ExitButton"
-        Me.ExitButton.Size = New System.Drawing.Size(75, 23)
+        Me.ExitButton.Size = New System.Drawing.Size(117, 52)
         Me.ExitButton.TabIndex = 2
-        Me.ExitButton.Text = "Exit"
+        Me.ExitButton.Text = "E&xit"
         Me.ExitButton.UseVisualStyleBackColor = True
+        '
+        'ClearButton
+        '
+        Me.ClearButton.Location = New System.Drawing.Point(213, 288)
+        Me.ClearButton.Name = "ClearButton"
+        Me.ClearButton.Size = New System.Drawing.Size(117, 52)
+        Me.ClearButton.TabIndex = 3
+        Me.ClearButton.Text = "&Clear"
+        Me.ClearButton.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(545, 450)
+        Me.ClientSize = New System.Drawing.Size(545, 362)
+        Me.Controls.Add(Me.ClearButton)
         Me.Controls.Add(Me.ExitButton)
-        Me.Controls.Add(Me.UpdateButton)
-        Me.Controls.Add(Me.ListBox1)
+        Me.Controls.Add(Me.RollButton)
+        Me.Controls.Add(Me.DisplayListBox)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents ListBox1 As ListBox
-    Friend WithEvents UpdateButton As Button
+    Friend WithEvents DisplayListBox As ListBox
+    Friend WithEvents RollButton As Button
     Friend WithEvents ExitButton As Button
+    Friend WithEvents ClearButton As Button
 End Class
