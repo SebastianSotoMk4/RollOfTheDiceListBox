@@ -5,6 +5,7 @@
 'https://github.com/SebastianSotoMk4/RollOfTheDiceListBox.git
 Option Strict On
 Option Explicit On
+
 Public Class RollOfTheDiceListBoxForm
     'The RollOneDie() function will return a random number between 1 and a maximum inputed number 
     'Example, RollOneDie(10) will return a number between 1 and 10
